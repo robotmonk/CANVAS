@@ -1,0 +1,17 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title>canvas</title>
+</head>
+<body>
+<canvas width="500" height="500" id="mioCanvas" style="border: solid"></canvas>
+<script>
+ var mioCanvas = document.getElementById("mioCanvas");
+ var context = mioCanvas.getContext("2d");
+ context.fillStyle="#ff0000";
+ context.fillRect(50,25,150,100);
+ context.strokeStyle="#00ff00";
+ context.strokeRect(50,25,150,100);
+</script>
+</body>
+</html>

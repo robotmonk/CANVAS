@@ -1,0 +1,19 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title>canvas - close</title>
+</head>
+<body>
+<canvas width="500" height="500" id="mioCanvas" style="border: solid"></canvas>
+<script>
+ var mioCanvas = document.getElementById("mioCanvas");
+ var context = mioCanvas.getContext("2d");
+ context.beginPath();
+ context.moveTo(50,70);
+ context.lineTO(20,125);
+ context.lineTO(50,170);
+ context.closePath(); /* rafforzativo di fill */
+ context.stroke();
+</script>
+</body>
+</html>

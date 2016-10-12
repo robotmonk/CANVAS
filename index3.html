@@ -1,0 +1,30 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title>canvas - fill</title>
+</head>
+<body>
+	<style>
+   #mioCanvas{
+    background-color: lightgrey;
+
+	 }
+
+	</style>
+<canvas width="500" height="500" id="mioCanvas" style="border: solid"></canvas>
+<script>
+ var mioCanvas = document.getElementById("mioCanvas");
+ var context = mioCanvas.getContext("2d");
+ context.strokeStyle="#00ff00";
+ context.fillStyle="#ff0000";
+ context.beginPath();
+ context.moveTo(0,0);
+ context.lineTo(20,125);
+ context.lineTo(50,170);
+ context.lineTo(180,180);
+ /*context.lineTo(30,80);*/
+ context.stroke();
+ context.fill(); /* con questa proprietà il primo punto e l'ultimo vengono congiunti */
+</script>
+</body>
+</html>

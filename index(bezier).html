@@ -1,0 +1,20 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title>canvas - close</title>
+</head>
+<body>
+<canvas width="500" height="500" id="mioCanvas" style="border: solid"></canvas>
+<script>
+ var mioCanvas = document.getElementById("mioCanvas");
+ var context = mioCanvas.getContext("2d");
+ context.strokeStyle="#00ff00";
+ context.beginPath();
+ context.moveTo(150,150);
+ context.quadraticCurveTo(290,170,250,300);
+ context.stroke();
+</script>
+</body>
+</html>
+
+
